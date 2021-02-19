@@ -9,11 +9,10 @@ rootWindow.title("Safe eye")
 
 robotVoice = pyttsx3.init()
 
-for _ in range(10):
-    robotVoice.say("hello guys")
-    robotVoice.runAndWait()
-
-
+# for _ in range(10):
+#     robotVoice.say("hello guys")
+#     robotVoice.runAndWait()
+# test
 
 
 rootWindow.mainloop()

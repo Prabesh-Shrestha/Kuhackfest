@@ -2,4 +2,5 @@ download python
 open cmd
 type 
 pip install tkinter
+pip install pySerial
 pip install pyttsx3
