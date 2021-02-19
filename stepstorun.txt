@@ -1,0 +1,5 @@
+download python
+open cmd
+type 
+pip install tkinter
+pip install pyttsx3
