@@ -1,28 +1,31 @@
+# Importing all the needed packages
 from tensorflowfunction import *
 from bluetoothcommunication import *
 from tkinter import *
-import pyttsx3
+from tkinter.font import *
+from pyttsx3 import *
 from threading import * 
 import sys
 
+# config all the tkinter window 
 rootWindow = Tk()
 rootWindow.iconphoto(False, PhotoImage(file = "src/pics/eye.png"))
 rootWindow.title("Safe eye")
 rootWindow.geometry("500x500")
-
-robotVoice = pyttsx3.init()
+rootWindow.resizable(False, False)
+rootWindow.config(bg = "#a7c5eb")
+# initializing the tts
+robotVoice = init()
 
 
 def welcome():
     robotVoice.say("Safe eye started")
     robotVoice.runAndWait()
-
 welcomeThread = Thread(target=welcome).start()
 
-startButton = Button(rootWindow, text = "Start using camera").pack()
 
-
-
+# font= ('Arial', 10, 'underline')
+Button(rootWindow, text = "Start using camera", bg = "#709fb0", fg = "white", font = Font(weight = "bold",size = 38)).grid(row = 0, column = 0)
 
 rootWindow.mainloop()
 sys.exit()
