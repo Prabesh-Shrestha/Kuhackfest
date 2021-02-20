@@ -1,10 +1,5 @@
 # Kuhackfest
 
-<<<<<<< HEAD
-# Kuhackfest
-
-=======
->>>>>>> 94ca698deac259ac71d44e2bbc32620f71cf63f3
 download python
 
 add pip in environmental variable
