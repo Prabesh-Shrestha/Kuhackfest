@@ -18,7 +18,7 @@ rootWindow.config(bg = "#a7c5eb")
 robotVoice = init()
 buttonFont = Font(weight = "bold",size = 38)
 def welcome():
-    robotVoice.say("Safe eye started")
+    robotVoice.say("Third eye started")
     robotVoice.runAndWait()
 welcomeThread = Thread(target=welcome).start()
 
